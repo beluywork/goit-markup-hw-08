@@ -1,0 +1,73 @@
+.site-nav,
+.adress-nav {
+  list-style: none;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  .link {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .link:hover,
+  .link:focus {
+    color: $accent-color;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.adress-nav {
+  display: flex;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  .link {
+    display: flex;
+    align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    color: $secondary-text-color;
+  }
+  .link:hover,
+  .link:focus {
+    color: $accent-color;
+  }
+  .item:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.icon {
+  &-message,
+  &-telephone {
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+  }
+}

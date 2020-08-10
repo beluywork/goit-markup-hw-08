@@ -1,0 +1,39 @@
+.advantage {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  .list {
+    display: flex;
+    list-style: none;
+  }
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .vector {
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    &-background {
+      margin-top: 94px;
+      margin-bottom: 30px;
+    }
+  }
+  .title {
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}

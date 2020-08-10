@@ -1,0 +1,45 @@
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$white-text: #ffffff;
+$accent-color: #2196f3;
+$background-color-button: #2196f3;
+$footer-adress-color: rgba(255, 255, 255, 0.6);
+$background-image-color: rgba(33, 150, 243, 0.9);
+$background-text-color: #2f303a;
+$background-section-color: #f5f4fa;
+
+body {
+  background-color: #ffffff;
+  color: #757575;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a.link {
+  margin-right: 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
