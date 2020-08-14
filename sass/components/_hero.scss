@@ -1,4 +1,5 @@
 .hero {
+  height: 400px;
   background-color: #000000;
   background-image: linear-gradient(
       to right,
@@ -10,35 +11,44 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  .container {
-    width: 1200px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
   }
   .title {
     color: $white-text;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
-    padding-top: 200px;
+    padding-top: 118px;
+    margin-top: 0;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
   .button {
     display: inline-block;
-    text-align: center;
     padding: 10px 32px;
     background-color: $background-color-button;
     color: $white-text;
-    text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
+    border: none;
+    width: 200px;
+    margin-left: 125px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 284px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 490px;
+    }
   }
 }

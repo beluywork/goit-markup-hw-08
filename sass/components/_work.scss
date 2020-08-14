@@ -1,19 +1,38 @@
 .work {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  .apps {
-    position: relative;
-  }
-  .list {
-    display: flex;
-    justify-content: center;
+  margin-top: 94px;
+  .container {
+    padding-bottom: 94px;
   }
   .item:not(:last-child) {
     margin-right: 30px;
+  }
+  .list {
+    list-style: none;
+    display: flex;
+  }
+  .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    width: 370px;
+    height: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    background: rgba(47, 48, 58, 0.8);
+    color: $white-text;
+  }
+  .apps {
+    position: relative;
   }
   .title {
     color: $primary-text-color;
@@ -23,23 +42,11 @@
     text-align: center;
     margin-bottom: 50px;
   }
-  .text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(47, 48, 58, 0.8);
-    width: 370px;
-    height: 70px;
-    color: $white-text;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+  @media screen and (min-width: 0px) {
+    display: none;
   }
-  .list {
-    list-style: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
 }
